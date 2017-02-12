@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+ <head>
+	<meta charset="UTF-8">
+	<meta name="Generator" content="EditPlus®">
+	<meta name="Author" content="王佳蕾">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<title>Document</title>
+	<style type="text/css">
+		#box{
+			position:relative;
+		}
+	</style>
+ </head>
+ <body>
+	<div id="box" style="background:red;width:200px;height:200px">
+	</div>
+	<canvas id="can" width="100px" height="100px" style="background:blue"></canvas>
+	<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/keyboard.js"></script>
+	<script>
+		/*$("#box").attr("width","100px");
+		$("#box").attr("height","100px");
+		$("#box").attr("background-color","red");
+		box.style.width="100px";
+		box.style.height="100px";
+		box.style.backgroundColor="red";
+		$("#box").css("width","100px");
+		$("#box").css("height","100px");
+		$("#box").css("background-color","red");
+		$("#box").css({"width":"200px","height":"200px"});
+		$("#can").css({"width":"200px","height":"200px"});*/
+		var canvas = document.getElementById("can");
+		/*box.style.width = "200px";
+		box.style.height = "200px";*/
+		//$("#can").attr({"width":"200px","height":"200px"});
+		canvas.width=200;
+		canvas.height=200;
+		var tempY=33.5;
+		var overlap=3;
+		var offsetY = 32;
+		var tileSize = 16;
+		colIndex = parseInt((tempY+overlap-offsetY)/tileSize);
+		console.log(colIndex);
+	</script>
+ </body>
+</html>

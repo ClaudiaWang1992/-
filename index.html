@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+ <head>
+	<meta charset="UTF-8">
+	<meta name="Generator" content="EditPlus®">
+	<meta name="Author" content="王佳蕾">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="坦克大战">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>坦克大战</title>
+	<link rel="stylesheet" type="type/css" href="css/default.css">
+	<style type="text/css">
+		canvas{
+			position:absolute;
+		}
+		#canvasDiv{
+			width:512px;
+			height:448px;
+		}
+	</style>
+ </head>
+ <body>
+	<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/array.js"></script>
+	<script type="text/javascript" src="js/const.js"></script>
+	<script type="text/javascript" src="js/keyboard.js"></script>
+	<script type="text/javascript" src="js/num.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+	<script type="text/javascript" src="js/stage.js"></script>
+	<script type="text/javascript" src="js/level.js"></script>
+	<script type="text/javascript" src="js/map.js"></script>
+	<script type="text/javascript" src="js/tank.js"></script>
+	<script type="text/javascript" src="js/bullet.js"></script>
+	<script type="text/javascript" src="js/collision.js"></script>
+	<script type="text/javascript" src="js/crackAnimation.js"></script>
+	<script type="text/javascript" src="js/prop.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<div class="container">
+		<h3>操作说明：玩家1：wasd上下左右，space射击；玩家2：方向键上下左右，enter射击。n下一关，p上一关</h3>
+		<div class="main clearfix">
+			<div id="canvasDiv">
+				<canvas id="wallCanvas"></canvas>
+				<canvas id="tankCanvas"></canvas>
+				<canvas id="grassCanvas"></canvas>
+				<canvas id="overCanvas"></canvas>
+				<canvas id="stageCanvas"></canvas>
+			</div>
+		</div>
+	</div>
+	<div style="text-align:center;">
+		<p>来源:<a href="" target="_blank">王佳蕾</a></p>
+    </div>
+ </body>
+</html>
